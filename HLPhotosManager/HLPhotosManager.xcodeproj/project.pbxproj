@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CB9528005E5C62396EB6F6D /* Pods_HLPhotosManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EBB7EDDA294223153D4FD6 /* Pods_HLPhotosManager.framework */; };
 		F2111B73205FFDE30032E6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2111B72205FFDE30032E6E7 /* AppDelegate.swift */; };
 		F2111B75205FFDE30032E6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2111B74205FFDE30032E6E7 /* ViewController.swift */; };
 		F2111B78205FFDE30032E6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2111B76205FFDE30032E6E7 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F31AA2058148EA24B051EDC /* Pods-HLPhotosManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLPhotosManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLPhotosManager/Pods-HLPhotosManager.release.xcconfig"; sourceTree = "<group>"; };
+		91EBB7EDDA294223153D4FD6 /* Pods_HLPhotosManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLPhotosManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC52D1A8C774ADCA02FFEF12 /* Pods-HLPhotosManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLPhotosManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HLPhotosManager/Pods-HLPhotosManager.debug.xcconfig"; sourceTree = "<group>"; };
 		F2111B6F205FFDE30032E6E7 /* HLPhotosManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLPhotosManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2111B72205FFDE30032E6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2111B74205FFDE30032E6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB9528005E5C62396EB6F6D /* Pods_HLPhotosManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		671A895B343997B52BDFAFDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91EBB7EDDA294223153D4FD6 /* Pods_HLPhotosManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74379B73DE1BF257E912EF2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC52D1A8C774ADCA02FFEF12 /* Pods-HLPhotosManager.debug.xcconfig */,
+				1F31AA2058148EA24B051EDC /* Pods-HLPhotosManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2111B66205FFDE30032E6E7 = {
 			isa = PBXGroup;
 			children = (
 				F2111B71205FFDE30032E6E7 /* HLPhotosManager */,
 				F2111B86205FFDE30032E6E7 /* HLPhotosManagerTests */,
 				F2111B70205FFDE30032E6E7 /* Products */,
+				74379B73DE1BF257E912EF2A /* Pods */,
+				671A895B343997B52BDFAFDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2111B8C205FFDE30032E6E7 /* Build configuration list for PBXNativeTarget "HLPhotosManager" */;
 			buildPhases = (
+				AF239B8C796321B7087D21BB /* [CP] Check Pods Manifest.lock */,
 				F2111B6B205FFDE30032E6E7 /* Sources */,
 				F2111B6C205FFDE30032E6E7 /* Frameworks */,
 				F2111B6D205FFDE30032E6E7 /* Resources */,
+				73AC8D5F1BD5B18D9898BCEB /* [CP] Embed Pods Frameworks */,
+				CF14AC55269BC8CAC9997F4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73AC8D5F1BD5B18D9898BCEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HLPhotosManager/Pods-HLPhotosManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF239B8C796321B7087D21BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF14AC55269BC8CAC9997F4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HLPhotosManager/Pods-HLPhotosManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2111B6B205FFDE30032E6E7 /* Sources */ = {
@@ -351,11 +426,13 @@
 		};
 		F2111B8D205FFDE30032E6E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC52D1A8C774ADCA02FFEF12 /* Pods-HLPhotosManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UTT4HQ4F3H;
 				INFOPLIST_FILE = HLPhotosManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.HLPhotosManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,11 +443,13 @@
 		};
 		F2111B8E205FFDE30032E6E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F31AA2058148EA24B051EDC /* Pods-HLPhotosManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UTT4HQ4F3H;
 				INFOPLIST_FILE = HLPhotosManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lhl.HLPhotosManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
